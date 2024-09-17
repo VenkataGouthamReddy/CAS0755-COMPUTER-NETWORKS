@@ -1,7 +1,6 @@
 //CRC process:
 #include <stdio.h>
 #include <string.h>
-
 #define POLYNOMIAL 0x9
 #define DATA_BITS 7
 void crcDivide(int data[], int divisor[], int data_len, int divisor_len) {
@@ -34,7 +33,6 @@ void crcEncode(int data[], int divisor[], int data_len, int divisor_len) {
 }
 void crcDecode(int codeword[], int divisor[], int codeword_len, int divisor_len) {
     int remainder[codeword_len];
-
     for (int i = 0; i < codeword_len; i++) {
         remainder[i] = codeword[i];
     }
